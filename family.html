@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Family</title>
+</head>
+<body background="gambar keluarga\wall.jpg">
+<div>
+<table align="center">
+<tr>
+<td><a href="index.html" target="_blank"><img src="gambar keluarga\home.png"></a></td>
+<td><a href="biodata.html" target="_blank"><img src="gambar keluarga\bio.png"></a></td>
+<td><a href="experience.html" target="_blank"><img src="gambar keluarga\exp.png"></a></td>
+<td><a href="education.html" target="_blank"><img src="gambar keluarga\edu.png"></a></td>
+<td><a href="family.html" target="_blank"><img src="gambar keluarga\fam.png"></a><td>
+<td><a href="gallery.html" target="_blank"><img src="gambar keluarga\gale.png"></a></td>
+</tr>
+</table>
+<center><h2><font face="verdana" color="gold">MY FAMILY</h2>
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'The picture below is picture of me with my parents and my sister';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+<table align="center" border="2" background="gambar keluarga\sand.jpg">
+<tr>
+<td colspan="3"><img src="gambar keluarga\fam.jpg"</td>
+</tr>
+<tr align="center">
+<td rowspan="3"><b>MY PARENTS</td>
+<td><b>Name</td>
+<td><b>Relationship</td>
+</tr>
+<tr align="center">
+<td>ENCIK MOHD FADHIL BIN MAT PILUS</td>
+<td>FATHER</td>
+</tr>
+<tr align="center">
+<td>PUAN HASEMAH BINTI MOHTAR</td>
+<td>MOTHER</td>
+</tr>
+<tr align="center">
+<td rowspan="4"><b>MY SIBLINGS</td>
+<td><b>Name</td>
+<td><b>Relationship</td>
+</tr>
+<tr align="center">
+<td>MUHAMMAD FAIZ BIN MOHD FADHIL</td>
+<td>BROTHER</td>
+</tr>
+<tr align="center">
+<td>MUHAMMAD FAIZAL ADHA BIN MOHD FADHIL</td>
+<td>BROTHER</td>
+</tr>
+<tr align="center">
+<td>NUR AFIFI ALESYA BINTI MOHD FADHIL</td>
+<td>SISTER</td>
+</tr>
+</div>
+</body>
+</html>
